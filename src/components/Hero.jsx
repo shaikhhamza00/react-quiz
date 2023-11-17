@@ -1,17 +1,16 @@
 import React from 'react'
-import hero from '../assets/img/hero.jpg'
+import hero from '../assets/img/image 1.png'
 
 const HeroSection = () => {
   return (
     <section className='hero'>
       <div className='hero-content'>
         <div className='text-container'>
-          <h1>Indulge in a Symphony of Flavors</h1>
           <p>
-            Welcome to a world where the aroma of freshly baked wonders
-            captivates your senses. Our master bakers craft each creation with
-            passion, using only the finest ingredients to ensure every bite is
-            pure delight.
+            Indulge in a Symphony of Flavors Welcome to a world where the aroma
+            of freshly baked wonders captivates your senses. Our master bakers
+            craft each creation with passion, using only the finest ingredients
+            to ensure every bite is pure delight.
           </p>
           <p>
             From flaky croissants to decadent cakes, experience the epitome of
@@ -21,7 +20,9 @@ const HeroSection = () => {
             delights. Your journey to exceptional taste begins here.
           </p>
         </div>
-        <img src={hero} alt='Hero Image' className='hero-image' />
+        <div className='image-container'>
+          <img src={hero} alt='Hero Image' className='hero-image' />
+        </div>
       </div>
     </section>
   )
