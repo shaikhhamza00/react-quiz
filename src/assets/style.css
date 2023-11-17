@@ -4,6 +4,7 @@ header {
   background-color: #ffffff;
   color: #333;
   padding: 10px;
+  padding-left: 40px;
 }
 
 nav {
@@ -13,7 +14,7 @@ nav {
 }
 
 .brand {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 .menu-list {
@@ -35,28 +36,73 @@ nav {
 
 .hero {
   position: relative;
-  text-align: center;
+  text-align: left; /* Align text to the left */
+  background-color: #755705; /* Set background color to black */
+  color: #fff; /* Set text color to white */
+  overflow: hidden; /* Hide overflowing content */
 }
 
 .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
 }
 
-.hero h1 {
+.text-container {
+  max-width: 600px;
+}
+
+.text-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.hero-image {
+  width: 50%; /* Set width of the image to 50% of the container */
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+/* styles.css */
+
+.hero {
+  position: relative;
+  text-align: left; /* Align text to the left */
+  background-color: #755705; /* Set background color to black */
+  color: #fff; /* Set text color to white */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.text-container {
+  max-width: 600px;
+}
+
+.text-container h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.hero p {
+.text-container p {
   font-size: 1.5rem;
+  line-height: 1.6;
 }
 
 .hero-image {
-  width: 100%;
-  max-height: 90vh; /* Set a maximum height, adjust as needed */
-  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  width: 200px; /* Adjust the size of the circular image */
+  height: 200px; /* Adjust the size of the circular image */
+  object-fit: cover;
+  margin-right: 140px; /* Maintain aspect ratio while covering the container */
+  border-radius: 50%; /* Create a circular appearance */
 }
